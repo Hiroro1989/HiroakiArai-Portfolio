@@ -11,7 +11,7 @@
 
 /* header */
 
-header, nav, ul, li, a {
+header, nav, ul, li {
     background-color: #31343D;
 }
 
@@ -43,7 +43,7 @@ nav ul li{
     padding: 3px;
 }
 
-a{
+nav ul li a{
     color: var(--box-in-box);
     text-decoration: none;
     font-size: 20px;
@@ -51,9 +51,11 @@ a{
     padding-bottom: 5px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    background-color: #31343D;
+
 }
 
-/* background ima */
+/* background img */
 
 .cool-subtitle-here{
     height: 300px;
@@ -75,41 +77,68 @@ a{
     bottom:2rem;
 }
 
-main{
-    padding: 10px 20px 10px 20px;
-}
+/* main */
 
-h2{
-    color: #445876;
+.About-Me {
+    padding: 0 0 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* border: solid black; */
+    height: auto;
+    position: relative;
+    /* flex-basis: content; */
+} 
+
+ h2{
     color: #445876;
     font-size: 35px;
-    padding: 10px;
-    border-right: #445876 solid 5px;
-    display: inline-block;
-    position: relative;
+    padding:0 5px 0 100px;
+    width: 20%;
+    height:100%;
+    
 }
 
 p{
-    display: inline;
-    padding: 0px;
-    position: absolute;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 30px;
+    width: 70%;
+    border-left: #445876 solid 5px;
+
+} 
+/* work in progress */
+.Work   {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:flex-start;
+    /* border: solid black; */
+    height: auto;
+    position: relative;
 }
 
-.About-ME h2{
-    width: 20%;
+.link-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    width: 70%;
+    height: auto;
+    padding: 0 0 0 35px;
+    border-left: #445876 solid 5px;
 }
 
-.About-ME p{
-    width: 80%;
+.Surf-Report{
+    background-image: url(./img/mern.jpg);
+    width: 99%;
+    height: 300px;}
+
+.four-boxes{
+    width: 50;
 }
 
-
-
-
-/* .About-Me::before{
-    content: "About Me";
-    color: #445876;
-    font-size: 35px;
-    padding: 7px;
-} */
+.LED-WALL .Calculator .Pastel-Puzzle .Run-Buddy{
+    background-image: url(./img/mern.jpg);
+    width: 47.5%;
+    height: 100px;
+    
+}
