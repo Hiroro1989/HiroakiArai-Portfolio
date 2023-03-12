@@ -11,7 +11,7 @@
 
 /* header */
 
-header, nav, ul, li {
+header, header nav, header ul, header li, header a {
     background-color: #31343D;
 }
 
@@ -28,7 +28,7 @@ h1{
     display:inline-block;
     padding: 0px 0px 0px 70px;
 }
-nav{
+header nav{
     float: right;
     padding-top: 15px;
     padding-right: 20px;
@@ -43,7 +43,7 @@ nav ul li{
     padding: 3px;
 }
 
-nav ul li a{
+header nav ul li a{
     color: var(--box-in-box);
     text-decoration: none;
     font-size: 20px;
@@ -51,7 +51,6 @@ nav ul li a{
     padding-bottom: 5px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    background-color: #31343D;
 
 }
 
@@ -80,15 +79,13 @@ nav ul li a{
 /* main */
 
 .About-Me {
-    padding: 0 0 15px 0px;
+    margin-bottom:30px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    /* border: solid black; */
     height: auto;
     position: relative;
-    /* flex-basis: content; */
 } 
 
  h2{
@@ -106,7 +103,7 @@ p{
     border-left: #445876 solid 5px;
 
 } 
-/* work in progress */
+/* work */
 .Work   {
     display: flex;
     flex-direction: row;
@@ -115,12 +112,14 @@ p{
     /* border: solid black; */
     height: auto;
     position: relative;
+    margin-bottom: 30px ;
 }
 
 .link-container{
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
+    flex-wrap: wrap;
     width: 70%;
     height: auto;
     padding: 0 0 0 35px;
@@ -130,15 +129,72 @@ p{
 .Surf-Report{
     background-image: url(./img/mern.jpg);
     width: 99%;
-    height: 300px;}
-
-.four-boxes{
-    width: 50;
+    height: 300px;
+    margin-bottom:15px;
 }
 
-.LED-WALL .Calculator .Pastel-Puzzle .Run-Buddy{
+.LED-WALL {
     background-image: url(./img/mern.jpg);
-    width: 47.5%;
-    height: 100px;
+    width: 49.0%;
+    height: 150px;
+    /* border: solid red 3px; */
+    margin-bottom: 15px;
+    margin-right: 6.0px;
+}
+
+.Calculator{
+    background-image: url(./img/mern.jpg);
+    width: 49.0%;
+    height: 150px;
+    margin-bottom: 15px;
+    margin-left: 6.0px;
+}
+
+.Pastel-Puzzle{
+    background-image: url(./img/mern.jpg);
+    width: 49.0%;
+    height: 150px;
+    margin-right: 6.0px;
+}
+
+.Run-Buddy{
+    background-image: url(./img/mern.jpg);
+    width: 49.0%;
+    height: 150px;
+    margin-bottom: 15px;
+    margin-left: 6.0px;
+}
+
+/* contact-me */
+
+.Contact-Me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
     
+}
+
+.Contact-Me nav{
+    border-left: #445876 solid 5px;
+    width: 70%;
+}
+.Contact-Me ul{
+    justify-content:space-around; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.Contact-Me a{
+    color: #445876;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 4px solid;
+    padding-bottom: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
