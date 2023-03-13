@@ -49,6 +49,8 @@ nav ul{
 
 nav ul li{
     padding: 3px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul li a{
@@ -325,6 +327,23 @@ p{
 
 @media screen and (max-width:776px){
 
+    header{
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    h1{
+        justify-content: center;
+        width: 100%;
+        padding: 0%;
+    }
+
+    header nav{
+        width: 100%;
+        justify-content: center;
+        padding: 0%;
+    }
+
     .About-Me{
         flex-direction: column;
     }
@@ -371,7 +390,7 @@ p{
 }
 
 /* need to fix media queries */
-/* @media screen and(max-width:660px) {
+ @media screen and (max-width:660px) {
     header{
         flex-direction: column;
         padding: 0%;
@@ -389,16 +408,15 @@ p{
         padding: 0%;
     }
 
-    nav ul{
-        flex-direction: center;
+    header nav ul{
+        flex-direction: column;
         width: 100%;
     }
 
-    nav ul li{
+     header nav ul li{
         padding: 0%;
         margin: 0.5%;
         width: 100%;
-        display: flex;
         justify-content: center;
     }
 
@@ -407,7 +425,25 @@ p{
         justify-content: center;
         width: 100%;
         border: 0 0 2px solid;
+        }
+
+    .Contact-Me ul{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 
-} */
+    .Contact-Me li{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Contact-Me a {
+        padding: 1% 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+} 
 
