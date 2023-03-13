@@ -1,7 +1,8 @@
 :root{
     --heading-border-color: #445877;
     --box-in-box: #91CBCD;
-    --header-main: #31343D;
+    --header-main: hsl(225, 11%, 22%);
+    --h2-border: #445876;
 }
 
 *{
@@ -12,7 +13,7 @@
 /* header */
 
 header{
-    padding: 15px 0px 15px 0px;
+    padding: 1% 0% 1% ;
     flex-direction: row;
     display: flex;
     justify-content: flex-start;
@@ -22,12 +23,12 @@ header{
 }
 
 header, header nav, header ul, header li, header a {
-    background-color: #31343D;
+    background-color:var(--header-main);
 }
 
 h1{
-    color: #31343D;
-    font-size: 48px;
+    color: var(--header-main);
+    font-size: 300%;
     background-color: var(--box-in-box);
     display:flex;
     padding: 0 0 0 4%;
@@ -35,19 +36,18 @@ h1{
     width: 30%;
 }
 header nav{
-    padding-top: 15px;
-    padding-right: 20px;
+    padding: 1% 2% 1% 0px;
     display: flex;
-    width: 69%;
+    width: 70%;
     justify-content: flex-end;
 }
 
 nav ul{
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li{
-    display: inline;
     padding: 3px;
 }
 
@@ -91,6 +91,7 @@ header nav ul li a{
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
+    padding-bottom: 20px;
 }
 
 /* main section */
@@ -107,8 +108,8 @@ header nav ul li a{
 } 
 
  h2{
-    color: #445876;
-    font-size: 35px;
+    color: var(--h2-border);
+    font-size: 200%;
     padding:0 5% 0 5%;
     width: 20%;
     height:100%;
@@ -126,7 +127,6 @@ p{
     flex-direction: row;
     align-items: flex-start;
     justify-content:flex-start;
-    /* border: solid black; */
     height: auto;
     position: relative;
     margin-bottom: 30px ;
@@ -142,49 +142,137 @@ p{
     padding: 0 0 0 5%;
     height: auto;
     margin-bottom: 30px;
-    
-    border-left: #445876 solid 5px;
+    border-left: var(--h2-border) solid 5px;
+    text-decoration: none;
+}
+
+.link-container a{
+    color:var(--header-main);
+
 }
 
 .Surf-Report{
-    background-image: url(./img/mern.jpg);
+    background-image: url(./img/surf-report.jpg);
     width: 100%;
+    border: var(--box-in-box) 5px solid;
     height: 300px;
     margin-bottom:15px;
+    position: relative;
+    opacity: 0.6;
+}
+/* need to fix 2 clumn */
+.Surf-Report::after{
+    white-space: pre;
+    content: "Surf Report \A Mern Stack";
+    background-color: var(--box-in-box);
+    font-size: 150%;
+    padding: 7px;
+    position: absolute;
+    bottom:10%;
 }
 
-/* should define margin light left 1% each, then surf report widh 100% */
 .LED-WALL {
-    background-image: url(./img/mern.jpg);
+    background-image: url(./img/LED-WALL.jpg);
     width: 49%;
+    border: var(--box-in-box) 5px solid;
     height: 150px;
-    /* border: solid red 3px; */
     margin-bottom: 15px;
     margin-right: 1%;
+    position: relative;
+    opacity: 0.6;
+}
+
+.LED-WALL::after{
+    white-space: pre;
+    content: "LED Wall \A Node/IoT";
+    background-color: var(--box-in-box);
+    font-size: 150%;
+    padding: 7px;
+    position: absolute;
+    bottom:10%;
 }
 
 .Calculator{
-    background-image: url(./img/mern.jpg);
+    background-image: url(./img/Calculator.jpg);
     width: 49%;
+    border: var(--box-in-box) 5px solid;
     height: 150px;
     margin-bottom: 15px;
     margin-left: 1%;
+    position: relative;
+    opacity: 0.6;
+}
+
+.Calculator::after{
+    white-space: pre;
+    content: "Calculator \A React/Javascript/CSS";
+    background-color: var(--box-in-box);
+    font-size: 150%;
+    padding: 7px;
+    position: absolute;
+    bottom:10%;
 }
 
 .Pastel-Puzzle{
-    background-image: url(./img/mern.jpg);
+    background-image: url(./img/Pastel-puzzle.jpg);
     width: 49.0%;
+    border: var(--box-in-box) 5px solid;
     height: 150px;
     margin-bottom: 15px;
     margin-right: 1%;
+    position: relative;
+    opacity: 0.6;
+}
+
+.Pastel-Puzzle::after{
+    white-space: pre;
+    content: "Pastel Puzzles \A Mern Stack";
+    background-color: var(--box-in-box);
+    font-size: 150%;
+    padding: 7px;
+    position: absolute;
+    bottom:10%;
 }
 
 .Run-Buddy{
-    background-image: url(./img/mern.jpg);
+    background-image: url(./img/Run-Buddy.jpg);
     width: 49.0%;
+    border: var(--box-in-box) 5px solid;
     height: 150px;
     margin-bottom: 15px;
     margin-left: 1%;
+    position: relative;
+    opacity: 0.6;
+}
+
+.Run-Buddy::after{
+    white-space: pre;
+    content: "Run Buddy \A HTML/CSS";
+    background-color: var(--box-in-box);
+    font-size: 150%;
+    padding: 7px;
+    position: absolute;
+    bottom:10%;
+}
+
+.Surf-Report:hover{
+    opacity: 1;
+}
+
+.LED-WALL:hover{
+    opacity: 1;
+}
+
+.Calculator:hover{
+    opacity: 1;
+}
+
+.Pastel-Puzzle:hover{
+    opacity: 1;
+}
+
+.Run-Buddy:hover{
+    opacity: 1;
 }
 
 /* contact-me */
@@ -201,7 +289,7 @@ p{
 }
 
 .Contact-Me nav{
-    border-left: #445876 solid 5px;
+    border-left: var(--h2-border) solid 5px;
     width: 75%;
     padding: 0 0 0 5%;
 }
@@ -210,11 +298,11 @@ p{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 15px 0px;
+    margin: 4% 0%;
 }
 
 .Contact-Me a{
-    color: #445876;
+    color: var(--h2-border);
     text-decoration: none;
     font-size: 20px;
     border-bottom: 4px solid;
@@ -222,3 +310,104 @@ p{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+
+/* media queries */
+
+@media screen and (max-width:1025px){
+    h1{
+        font-size: 225%;
+    }
+
+    h2{
+        font-size: 175%;
+    }
+}
+
+@media screen and (max-width:776px){
+
+    .About-Me{
+        flex-direction: column;
+    }
+
+    h2{
+        width: 100%;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    p{
+        padding: 0 5%;
+        width: 100%;
+        border-left: none;
+    }
+
+    .Work{
+        flex-direction: column;
+    }
+
+    .link-container{
+        flex-direction: column;
+        width: 100%;
+        padding:0% 5%;
+        border-left: none;
+    }
+
+    .LED-WALL, .Calculator, .Pastel-Puzzle, .Run-Buddy{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .Contact-Me nav{
+        border-left: none;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .Contact-Me ul{
+        margin: 1% 0%;
+    }
+}
+
+/* need to fix media queries */
+/* @media screen and(max-width:660px) {
+    header{
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    h1{
+        justify-content: center;
+        width: 100%;
+        padding: 0%;
+    }
+
+    header nav{
+        width: 100%;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    nav ul{
+        flex-direction: center;
+        width: 100%;
+    }
+
+    nav ul li{
+        padding: 0%;
+        margin: 0.5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: 0 0 2px solid;
+    }
+
+} */
+
