@@ -1,444 +1,411 @@
-:root{
-    --heading-border-color: #445877;
-    --box-in-box: #91CBCD;
-    --header-main: hsl(225, 11%, 22%);
-    --h2-border: #445876;
+:root {
+  --heading-border-color: #445877;
+  --box-in-box: #91cbcd;
+  --header-main: hsl(225, 11%, 22%);
+  --h2-border: #445876;
 }
 
-*{
-    background-color: #EDEEF6;
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+  background-color: #edeef6;
+  font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* header */
 
-header{
-    padding: 1% 0% 1% ;
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
-    height: auto;
-    position: relative;
-    width: 100%;
+header {
+  padding: 1% 0% 1%;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: auto;
+  position: relative;
+  width: 100%;
 }
 
-header, header nav, header ul, header li, header a {
-    background-color:var(--header-main);
+header,
+h1,
+header nav,
+header ul,
+header li,
+header a {
+  background-color: var(--header-main);
+  display: flex;
 }
 
-h1{
-    align-items: center;
-    color: var(--header-main);
-    font-size: 300%;
-    background-color: var(--box-in-box);
-    display:flex;
-    padding: 0 0 0 4%;
-    justify-content: flex-end;
-    width: 30%;
-}
-header nav{
-    padding: 1% 2% 1% 0px;
-    display: flex;
-    width: 70%;
-    justify-content: flex-end;
+h1,
+header nav {
+  justify-content: flex-end;
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
+h1,
+header nav ul {
+  align-items: center;
 }
 
-nav ul li{
-    padding: 3px;
-    display: flex;
-    justify-content: flex-end;
+h1,
+header nav {
+  justify-content: flex-end;
 }
 
-header nav ul li a{
-    color: var(--box-in-box);
-    text-decoration: none;
-    font-size: 20px;
-    border-bottom: 4px solid;
-    padding-bottom: 5px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+h1 {
+  color: var(--header-main);
+  font-size: 300%;
+  background-color: var(--box-in-box);
+  padding: 0 0.5% 0 4%;
+  width: 30%;
+}
+header nav {
+  padding: 1% 2% 1% 0px;
+  width: 70%;
+}
 
+header li {
+  padding: 3px;
+}
+
+header a {
+  color: var(--box-in-box);
+  font-size: 20px;
+  border-bottom: 4px solid;
+  padding-bottom: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* background img */
 
-.cool-subtitle-here{
-    height: 300px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url(./img/cool.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.cool-subtitle-here {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(./img/cool.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.hiro{
-    position: absolute;
-    z-index: 100;
-    height:150px;
-    left: 4rem;
+.hiro {
+  position: absolute;
+  z-index: 100;
+  height: 150px;
+  left: 4rem;
 }
 
-.cool-subtitle-here::after{
-    content: "Web Developer";
-    background-color: var(--box-in-box);
-    font-size: 35px;
-    padding: 7px;
-    position: absolute;
-    right:4rem;
-    bottom:2rem;
+.cool-subtitle-here::after {
+  content: "Web Developer";
+  background-color: var(--box-in-box);
+  font-size: 35px;
+  padding: 7px;
+  position: absolute;
+  right: 4rem;
+  bottom: 2rem;
 }
 
-/* main container*/
+/* container*/
 
-.container{
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-bottom: 20px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 20px;
 }
 
-h2{
-    color: var(--h2-border);
-    font-size: 200%;
-    padding:0 5% 0 5%;
-    width: 20%;
-    height:100%;
+h2 {
+  color: var(--h2-border);
+  font-size: 200%;
+  padding: 0 5% 0 5%;
+  width: 20%;
+  height: 100%;
 }
 
 /* main section */
 
-.About-Me {
-    margin-bottom:30px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: auto;
-    position: relative;
-    width: 100%;
-} 
+.About-Me,
+.Work,
+.Contact-Me {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  height: auto;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
 
+p,
+.link-container,
+.Contact-Me nav {
+  width: 75%;
+  border-left: var(--h2-border) solid 5px;
+  padding-left: 5%;
+}
 
+/* about me */
 
-p{
+p {
+  padding-bottom: 1%;
+}
 
-    padding: 0 0 1% 5%;
-    width: 75%;
-    border-left: #445876 solid 5px;
-} 
 /* work */
-.Work   {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content:flex-start;
-    height: auto;
-    position: relative;
-    margin-bottom: 30px ;
-    width: 100%;
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: auto;
+  text-decoration: none;
+}
+/* under link container */
+.link-container a {
+  color: var(--header-main);
 }
 
-.link-container{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    flex-wrap: wrap;
-    width: 75%;
-    padding: 0 0 0 5%;
-    height: auto;
-    margin-bottom: 30px;
-    border-left: var(--h2-border) solid 5px;
-    text-decoration: none;
+.Surf-Report,
+.LED-WALL,
+.Calculator,
+.Pastel-Puzzle,
+.Run-Buddy {
+  border: var(--box-in-box) 5px solid;
+  position: relative;
+  opacity: 0.6;
 }
 
-.link-container a{
-    color:var(--header-main);
-
+.Surf-Report::after,
+.LED-WALL::after,
+.Calculator::after,
+.Pastel-Puzzle::after,
+.Run-Buddy::after {
+  white-space: pre;
+  background-color: var(--box-in-box);
+  font-size: 150%;
+  padding: 7px;
+  position: absolute;
+  bottom: 10%;
 }
 
-.Surf-Report{
-    background-image: url(./img/surf-report.jpg);
-    width: 100%;
-    border: var(--box-in-box) 5px solid;
-    height: 300px;
-    margin-bottom:15px;
-    position: relative;
-    opacity: 0.6;
+.Surf-Report:hover,
+.LED-WALL:hover,
+.Calculator:hover,
+.Pastel-Puzzle:hover,
+.Run-Buddy:hover {
+  opacity: 1;
 }
-/* need to fix 2 clumn */
-.Surf-Report::after{
-    white-space: pre;
-    content: "Surf Report \A Mern Stack";
-    background-color: var(--box-in-box);
-    font-size: 150%;
-    padding: 7px;
-    position: absolute;
-    bottom:10%;
+
+/* 1st row in link container */
+.Surf-Report {
+  background-image: url(./img/surf-report.jpg);
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.Surf-Report::after {
+  content: "Surf Report \A Mern Stack";
+}
+
+/* 2nd and 3rd row in link container */
+.LED-WALL,
+.Calculator,
+.Pastel-Puzzle,
+.Run-Buddy {
+  width: 49%;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.LED-WALL,
+.Pastel-Puzzle {
+  margin-right: 1%;
+}
+
+.Calculator,
+.Run-Buddy {
+  margin-left: 1%;
 }
 
 .LED-WALL {
-    background-image: url(./img/LED-WALL.jpg);
-    width: 49%;
-    border: var(--box-in-box) 5px solid;
-    height: 150px;
-    margin-bottom: 15px;
-    margin-right: 1%;
-    position: relative;
-    opacity: 0.6;
+  background-image: url(./img/LED-WALL.jpg);
 }
 
-.LED-WALL::after{
-    white-space: pre;
-    content: "LED Wall \A Node/IoT";
-    background-color: var(--box-in-box);
-    font-size: 150%;
-    padding: 7px;
-    position: absolute;
-    bottom:10%;
+.LED-WALL::after {
+  content: "LED Wall \A Node/IoT";
 }
 
-.Calculator{
-    background-image: url(./img/Calculator.jpg);
-    width: 49%;
-    border: var(--box-in-box) 5px solid;
-    height: 150px;
-    margin-bottom: 15px;
-    margin-left: 1%;
-    position: relative;
-    opacity: 0.6;
+.Calculator {
+  background-image: url(./img/Calculator.jpg);
 }
 
-.Calculator::after{
-    white-space: pre;
-    content: "Calculator \A React/Javascript/CSS";
-    background-color: var(--box-in-box);
-    font-size: 150%;
-    padding: 7px;
-    position: absolute;
-    bottom:10%;
+.Calculator::after {
+  content: "Calculator \A React/Javascript/CSS";
 }
 
-.Pastel-Puzzle{
-    background-image: url(./img/Pastel-puzzle.jpg);
-    width: 49.0%;
-    border: var(--box-in-box) 5px solid;
-    height: 150px;
-    margin-bottom: 15px;
-    margin-right: 1%;
-    position: relative;
-    opacity: 0.6;
+.Pastel-Puzzle {
+  background-image: url(./img/Pastel-puzzle.jpg);
 }
 
-.Pastel-Puzzle::after{
-    white-space: pre;
-    content: "Pastel Puzzles \A Mern Stack";
-    background-color: var(--box-in-box);
-    font-size: 150%;
-    padding: 7px;
-    position: absolute;
-    bottom:10%;
+.Pastel-Puzzle::after {
+  content: "Pastel Puzzles \A Mern Stack";
+  background-color: var(--box-in-box);
 }
 
-.Run-Buddy{
-    background-image: url(./img/Run-Buddy.jpg);
-    width: 49.0%;
-    border: var(--box-in-box) 5px solid;
-    height: 150px;
-    margin-bottom: 15px;
-    margin-left: 1%;
-    position: relative;
-    opacity: 0.6;
+.Run-Buddy {
+  background-image: url(./img/Run-Buddy.jpg);
 }
 
-.Run-Buddy::after{
-    white-space: pre;
-    content: "Run Buddy \A HTML/CSS";
-    background-color: var(--box-in-box);
-    font-size: 150%;
-    padding: 7px;
-    position: absolute;
-    bottom:10%;
-}
-
-.Surf-Report:hover, .LED-WALL:hover, 
-.Calculator:hover, .Pastel-Puzzle:hover, .Run-Buddy:hover{
-    opacity: 1;
+.Run-Buddy::after {
+  content: "Run Buddy \A HTML/CSS";
 }
 
 /* contact-me */
 
 .Contact-Me {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    height: auto;
-    position: relative;
-    width: 100%;
+  flex-wrap: wrap;
 }
 
-.Contact-Me nav{
-    border-left: var(--h2-border) solid 5px;
-    width: 75%;
-    padding: 0 0 0 5%;
-}
-.Contact-Me ul{
-    justify-content:space-around; 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 4% 0%;
+.Contact-Me ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 4% 0%;
 }
 
-.Contact-Me a{
-    color: var(--h2-border);
-    text-decoration: none;
-    font-size: 20px;
-    border-bottom: 4px solid;
-    padding-bottom: 5px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+.Contact-Me a {
+  color: var(--h2-border);
+  font-size: 20px;
+  border-bottom: 4px solid;
+  padding-bottom: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* media queries */
 
-@media screen and (max-width:1025px){
-    h1{
-        font-size: 225%;
-    }
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 225%;
+  }
 
-    h2{
-        font-size: 175%;
-    }
+  h2 {
+    font-size: 175%;
+  }
 }
 
-@media screen and (max-width:776px){
+@media screen and (max-width: 776px) {
+  header,
+  .About-Me,
+  .Work {
+    flex-direction: column;
+  }
 
-    header{
-        flex-direction: column;
-        padding: 0%;
-    }
+  /* header */
 
-    h1{
-        justify-content: center;
-        width: 100%;
-        padding: 0%;
-    }
+  header, h1, header nav {
+    padding: 0%;
+  }
 
-    header nav{
-        width: 100%;
-        justify-content: center;
-        padding: 0%;
-    }
+  h1, header nav {
+    justify-content: center;
+    width: 100%;
+  }
 
-    .About-Me{
-        flex-direction: column;
-    }
+  /* container */
 
-    h2{
-        width: 100%;
-        padding: 2%;
-        display: flex;
-        justify-content: center;
-    }
+  h2 {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+  }
 
-    p{
-        padding: 0 5%;
-        width: 100%;
-        border-left: none;
-    }
+  p, .link-container{
+    padding: 0 5%;
+    width: 100%;
+    border-left: none;
+  }
+  /* about me */
 
-    .Work{
-        flex-direction: column;
-    }
+  /* work */
 
-    .link-container{
-        flex-direction: column;
-        width: 100%;
-        padding:0% 5%;
-        border-left: none;
-    }
+  .link-container {
+    flex-direction: column;
+  }
 
-    .LED-WALL, .Calculator, .Pastel-Puzzle, .Run-Buddy{
-        width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
+  .LED-WALL,
+  .Calculator,
+  .Pastel-Puzzle,
+  .Run-Buddy {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 
-    .Contact-Me nav{
-        border-left: none;
-        width: 100%;
-        padding: 0%;
-    }
+  /* contact me*/
 
-    .Contact-Me ul{
-        margin: 1% 0%;
-    }
+  .Contact-Me nav {
+    border-left: none;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .Contact-Me ul {
+    margin: 1% 0%;
+  }
 }
 
-/* need to fix media queries */
- @media screen and (max-width:660px) {
-    header{
-        flex-direction: column;
-        padding: 0%;
-    }
+@media screen and (max-width: 660px) {
+  
+  /* header */
+    header,h1, header nav, header nav ul li {
+    padding: 0%;
+  }
 
-    h1{
-        justify-content: center;
-        width: 100%;
-        padding: 0%;
-    }
+  h1, header nav, header nav ul li{
+    justify-content: center;
+    width: 100%;
+  }
 
-    header nav{
-        width: 100%;
-        justify-content: center;
-        padding: 0%;
-    }
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    header nav ul{
-        flex-direction: column;
-        width: 100%;
-    }
+  header nav ul li {
+    margin: 0.5%;
+  }
 
-     header nav ul li{
-        padding: 0%;
-        margin: 0.5%;
-        width: 100%;
-        justify-content: center;
-    }
+  header nav ul li a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 0 0 2px solid;
+  }
 
-    header nav ul li a{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        border: 0 0 2px solid;
-        }
+  /* contact me */
 
-    .Contact-Me ul{
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
+  .Contact-Me ul, .Contact-Me li, .Contact-Me a{
+    width: 100%;
 
-    .Contact-Me li{
-        width: 100%;
-        justify-content: center;
-    }
+  }
 
-    .Contact-Me a {
-        padding: 1% 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  .Contact-Me ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-} 
+  .Contact-Me li {
+    justify-content: center;
+  }
 
+  .Contact-Me a {
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+  }
+}

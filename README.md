@@ -8,5 +8,5 @@ I created my portfolio for potential employee to see my previous work
 ![screenshot](./assets/img/mockup.png)
 
 ## Usage
-This portfolio page is for potential employee to understan my background.
+This portfolio page is for potential employee to understand my background.
 
